@@ -1,4 +1,5 @@
 import { useState } from "react";
+import QuizQuestions from "./Question";
 
 const Home = () => {
     
@@ -92,7 +93,12 @@ const Home = () => {
                     
                     <button type="submit">Submit</button>
                 </form>
+                
                 {error && <p style={{ color: 'red' }}>{error}</p>}
+
+                {quizData && quizData.length > 0 && (
+                <QuizQuestions questions={quizData} />
+        )}
             </div>
         )   
 };
