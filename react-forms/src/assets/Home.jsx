@@ -39,7 +39,7 @@ const Home = () => {
 
         try {
             const {name, category, difficulty} = forms;
-            const response = await fetch(`https://opentdb.com/api.php?amount=10&category=${category}&difficulty=${difficulty}&type=multiple`, {
+            const response = await fetch(`https://opentdb.com/api.php?amount=1&category=${category}&difficulty=${difficulty}&type=multiple`, {
                 method: 'GET',
             });
             if (!response.ok) {
