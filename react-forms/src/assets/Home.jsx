@@ -60,6 +60,7 @@ const Home = () => {
         return(
             <div>
                 <h1>Trivia App</h1>
+                <h2><i>Please Fill Out All Fields And Click Submit To Recieve A Question</i></h2>
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
