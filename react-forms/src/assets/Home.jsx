@@ -97,7 +97,7 @@ const Home = () => {
                 {error && <p style={{ color: 'red' }}>{error}</p>}
 
                 {quizData && quizData.length > 0 && (
-                <QuizQuestions questions={quizData} />
+                <QuizQuestions questions={quizData} name={forms.name} />
         )}
             </div>
         )   
